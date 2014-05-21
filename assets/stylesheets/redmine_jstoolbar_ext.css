@@ -1,0 +1,12 @@
+.jstb_ext_submenu {
+  position: absolute;
+  width: 300px;
+  background-color: #F7F7F7;
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+.jstb_ext_submenu button {
+  width: 100%;
+  text-align: left;
+}
