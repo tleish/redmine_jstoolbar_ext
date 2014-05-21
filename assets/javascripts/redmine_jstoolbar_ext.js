@@ -34,6 +34,23 @@
 
   })();
 
+  RedmineWikiToolbarExt.Paths = (function () {
+
+    var this_script_path = function(){
+      var $script = $("head script[src*='/redmine_jstoolbar_ext.js']");
+      return $script.attr('src');
+    };
+
+    var web_root = function(){
+      return this_script_path().replace(/redmine_jstoolbar_ext\/.*/, '');
+    };
+
+    return {
+      web_root: web_root
+    };
+
+  })();
+
 
   RedmineWikiToolbarExt.Markup = (function (jsToolBar) {
     var textile_strong_fn = "function () { this.singleTag('*') }";
