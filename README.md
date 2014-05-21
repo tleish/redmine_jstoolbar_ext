@@ -14,7 +14,8 @@ The Redmine jsToolbar Extension is the base library for adding additional functi
 ## Installation
 
 ```
-$ git clone https://github.com/tleish/redmine_jstoolbar_ext ./plugins/redmine_jstoolbar_ext
+$ cd redmine/plugins
+$ git clone https://github.com/tleish/redmine_jstoolbar_ext
 ```
 
 restart Redmine
