@@ -138,7 +138,10 @@
       $('<div/>')
         .addClass('jstb_ext_submenu')
         .addClass(uniq_menu_class())
-        .css({left: $button.position().left + 'px'})
+        .css({
+          left: $button.position().left + 'px',
+          top:  $button.position().top + 24 + 'px'
+        })
         .append(buttons)
         .insertAfter( $button );
     };
