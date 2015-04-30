@@ -37,7 +37,7 @@
   RedmineWikiToolbarExt.Paths = (function () {
 
     var this_script_path = function(){
-      var $script = $("head script[src*='/redmine_jstoolbar_ext.js']");
+      var $script = $("script[src*='/redmine_jstoolbar_ext.js']");
       return $script.attr('src');
     };
 
