@@ -53,14 +53,16 @@
 
 
   RedmineWikiToolbarExt.Markup = (function (jsToolBar) {
-    var textile_strong_fn = "function () { this.singleTag('*') }";
+    var strong_button = jsToolBar.prototype.elements.strong;
 
     var type = function(){
       return (is_textile()) ? 'textile' : 'markdown'
     };
 
+    // Check the wiki button method to make sure it has just a single '*' and not 2 *
+    // wiki button bold fn = "function (){this.singleTag("*")}"
     var is_textile = function(){
-      return String(jsToolBar.prototype.elements.strong.fn.wiki) == textile_strong_fn;
+      return String(strong_button.fn.wiki).match(/\*/g).length == 1;
     };
 
     return {
