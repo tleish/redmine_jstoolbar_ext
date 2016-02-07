@@ -6,6 +6,6 @@ Redmine::Plugin.register :redmine_jstoolbar_ext do
   author 'Thomas Leishman'
   description 'The Redmine JS Toolbar Extension add javascript functionality to add to the current jsToolbar.'
   version '0.2.1'
-  url 'https://github.com/tleish'
+  url 'https://github.com/tleish/redmine_jstoolbar_ext'
   author_url 'https://github.com/tleish'
 end
