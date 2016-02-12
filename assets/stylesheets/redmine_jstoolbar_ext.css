@@ -4,6 +4,7 @@
   background-color: #F7F7F7;
   border: 1px solid #ccc;
   box-shadow: 5px 5px 5px #ccc;
+  z-index: 100;
 }
 
 .jstb_ext_submenu button {
